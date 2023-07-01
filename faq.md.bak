@@ -1,0 +1,60 @@
+# FAQ
+
+## Appairer aisément un objet dio
+
+![welldone](media/welldone.png)
+
+__1. Créer la tuile de l'objet dans enki__
+
+Il s'agit d'ajouter l'objet dans l'app enki, sans se préoccuper pour le moment de l'objet lui-même:
+
+* se rendre dans l'app enki > Mes objets > dio > je n'ai pas de compte dio
+* sélectionner le modèle souhaité
+* suivre les étapes indiquée: lorsqu'il est demandé d'agir sur l'objet, ne pas en tenir compte et simplement cliquer sur le bouton “Suivant”; de même, lorsqu'il est indiqué que l'appareil électrique branché sur l'objet doit avoir réagi, ne pas en tenir compte également et simplement cliquer sur le bouton “Suivant”
+* finaliser l'appairage de l'objet jusqu'à arriver sur sa page de pilotage
+
+Dès lors, l'objet existe pour l'app et la box enki, simplement il n'est pas encore associé physiquement à la box enki. Nous allons voir cela dans l'étape suivante.
+
+__2. Associer l'objet à la tuile__
+
+Il s'agit de créer le lien radio entre la box enki et l'objet.
+
+* se rendre dans la page de pilotage de l'objet que l'on vient de créer
+* mettre l'objet en mode appairage; au besoin, récupérer la notice de l'objet, par exemple sur les sites de [Leroy Merlin](https://www.leroymerlin.fr/produits/electricite-domotique/domotique-et-objets-connectes/objets-connectes-compatibles-avec-enki/?p=1&filters=%7B%22marque-du-produit%22%3A%22DIO%22%7D), [ManoMano](https://www.manomano.fr/recherche/dio) ou [Chacon](https://chacon.com/fr/); bien relever le délai pendant lequel le mode appairage sera actif (en général 6 ou 12s)
+* depuis la page de pilotage de l'objet, appuyer sur “ON” ou “HAUT” (selon le modèle d'objet sélectionné à l'étape précédente)
+
+Dès lors, l'objet réagi et est désormais pilotable depuis l'app enki.
+
+Si ce n'est pas le cas:
+
+* vérifier que l'objet a bien été mis en mode appairage: si l'objet dispose d'une LED, elle clignote alors en rouge
+* vérifier que le point 3 a bien été réalisé pendant que l'objet était en mode appairage
+* vérifier que l'objet n'a pas atteint le maximum d'appairage possible (voir la notice de l'objet); si tel est le cas, se référer à la notice pour libérer un appairage
+* réinitialiser l'objet afin de libérer tous ses appairages précédents (voir la notice de l'objet)
+
+---
+
+## Supprimer un objet dio
+
+La suppression réalisée par enki supprime l'entrée dio uniquement côté enki: à l'issue, l'objet dio connait toujours enki car aucune action n'a été réalisée sur sa mémoire interne par enki.
+
+A l'instar de tous les objets dio de type récepteur (c'est le cas pour tous les objets dio compatibles enki), il est nécessaire d'agir aussi sur l'objet pour supprimer toute trace de l'objet le pilotant (la box enki, la home box dio, une autre box connectée, une télécommande dio, etc.). C'est d'ailleurs ce qui est indiqué dans les notices de ces objets, dans un paragraphe souvent intitulé **"Effacer une commande DiO 1.0"**:
+
+    Effacer une commande DiO 1.0
+	    
+	Si vous souhaitez effacer une commande
+	1. Approcher la commande du module et appuyer sur le bouton d'apprentissage du module, la Led commence à clignoter lentement.
+	2. Dans les 12 secondes, appuyer sur le bouton ‘OFF’('O') de la commande à eacer, la LED du module clignote deux fois pour confrmer l’effacement
+	
+
+([source: site de Chacon](https://chacon.com/fr/module-encastre/1084-module-on-off-pour-commander-l-eclairage-sans-fil-5411478548553.html))
+
+En s'appuyant sur ce paragraphe, il est possible de réaliser la même opération côté enki,a fin de faire en sorte que la mémoire de l'objet dio soit libéré d'enki. Pour cela, suivre les étapes ci-dessous dans l'ordre indiqué:
+
+7. se rendre dans la page de pilotage de l'objet dio à supprimer
+7. mettre l'objet en mode appairage; au besoin, récupérer la notice de l'objet, par exemple sur les sites de [Leroy Merlin](https://www.leroymerlin.fr/produits/electricite-domotique/domotique-et-objets-connectes/objets-connectes-compatibles-avec-enki/?p=1&filters=%7B%22marque-du-produit%22%3A%22DIO%22%7D), [ManoMano](https://www.manomano.fr/recherche/dio) ou [Chacon](https://chacon.com/fr/); bien relever le délai pendant lequel le mode appairage sera actif (en général 6 ou 12s)
+7. depuis la page de pilotage de l'objet, appuyer sur “OFF” ou “BAS” (selon le modèle de l'objet dio): l'objet devrait réagir, indiquant qu'il n'est plus pilotable par enki
+4. vérifier le non pilotage de l'objet en appuyant sur les commandes de sa page de pilotage
+4. supprimer l'objet depuis sa page de pilotage
+
+Dès lors, enki ne connait plus l'objet dio, et l'objet dio ne connait plus enki. Mission accomplie ;)
